@@ -67,3 +67,5 @@ c:\users\любовь\documents\visual studio 2015\Projects\IZ10\IZ10\bin\Micros
 c:\users\любовь\documents\visual studio 2015\Projects\IZ10\IZ10\obj\Debug\IZ10.csprojResolveAssemblyReference.cache
 c:\users\любовь\documents\visual studio 2015\Projects\IZ10\IZ10\obj\Debug\IZ10.dll
 c:\users\любовь\documents\visual studio 2015\Projects\IZ10\IZ10\obj\Debug\IZ10.pdb
+C:\Users\Любовь\Documents\Fuffy-Identity\IZ10\IZ10\obj\Debug\IZ10.dll
+C:\Users\Любовь\Documents\Fuffy-Identity\IZ10\IZ10\obj\Debug\IZ10.pdb
