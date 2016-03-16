@@ -1,0 +1,235 @@
+﻿@model Fuffy.Models.ApplicationUser
+@*@model IZ10.Controllers.AccountController*@
+
+@{
+    ViewBag.Title = "Profile";
+}
+
+<h2>Profile</h2>
+
+@*<h3>@ViewBag.data</h3>*@
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<link href="~/Content/css/main.css" rel="stylesheet" />
+<link href="~/Content/css/libs/Masonry/packery-docs/css/Init-Item-masonry.css" rel="stylesheet" />
+
+<div id="space1">
+    <div id="space" class="container-fluid"></div>
+
+    <div id="space2" class="allin container-fluid">
+        <div class="row">
+            <div id="menu-bar" class="col-lg-3 col-md-3 col-sm-3">
+                <div id="tesla" class="menu1">
+                    <button id="bagiy" type="button"><span id="menu-roll" class="glyphicon glyphicon-menu-hamburger"></span></button>
+                    @*<button id="transform" type="button"><span class="glyphicon glyphicon-menu-hamburger"></span></button>*@
+
+
+                    <style>
+                        #bagiy {
+                            background-color: inherit;
+                            border: none;
+                            float: right;
+                        }
+
+                        .horizontal-menu-bar {
+                        }
+                    </style>
+
+                    <div class="top">
+                        <!-- Logo -->
+                        <div id="logo">
+                            <div class="image avatar"><img src="~/Content/images/Tesla_Sarony.jpg" alt="" /></div>
+                            <h2 id="title">@ViewBag.Name @ViewBag.SecondName</h2>
+                            <p>Engineer</p>
+                        </div>
+
+                        <!-- Nav -->
+                        <nav id="nav">
+
+                            <ul>
+                                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="glyphicon glyphicon-home"> Intro</span></a></li>
+                                <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="glyphicon glyphicon-camera"> Portfolio</span></a></li>
+                                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="glyphicon glyphicon-user"> AboutMe</span></a></li>
+                                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="glyphicon glyphicon-envelope"> Contact</span></a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+
+                    <div class="bottom">
+
+                        <!-- Social Icons -->
+                        <ul class="icons">
+                            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main -->
+            <div id="main" class="col-lg-13  col-md-13  col-sm-13  col-xs-16">
+                <!-- one dark cover -->
+                <section id="top" class="one dark cover container-fluid">
+                    <button id="button1" class="button-turnOf" type="button"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+                    <button id="change-panorama" type="button"><span class="glyphicon glyphicon-refresh"></span></button>
+                    <!-- <img src="Common/images/1_budapest_hungary_panorama_2011.jpg" /> -->
+                    <div class="welcom">
+
+                        <header>
+                            <h2 class="alt">
+                                Привет, Я - целый мир. <br />
+                                Я - <strong>Fuffy</strong>.
+                            </h2>
+                            <p>Открой Мир</p>
+                        </header>
+
+                        @*<footer>
+                                <a href="#portfolio" class="button scrolly">Мой Мир</a>
+                            </footer>*@
+
+                    </div>
+                </section>
+
+
+                <!-- Portfolio -->
+                <section id="portfolio" class="two container-fluid">
+                    <div class="welcom-prof">
+
+    <header>
+        <h2>Portfolio</h2>
+    </header>
+
+    <p>Здесь будет комментарий владельца аккаунта</p>
+
+
+
+    <div class="grid">
+        @*<div class="grid-item grid-item--width2"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item"></div>*@
+        <img class="grid-item" src="~/Content/images/zzz_0308706.jpg" />
+        <img class="grid-item" src="~/Content/images/elitefon.ru-11863.jpg" />
+        <img class="grid-item grid-item--width2 grid-item--height2" src="~/Content/images/1275485657_mirandakerr_bymortallity_27.jpg" />
+        @*<div class="grid-item"></div>*@
+        <img class="grid-item grid-item--width2" src="~/Content/images/0_de936_dfbf37b0_XXL.jpg" />
+        <img class="grid-item grid-item--width2" src="~/Content/images/7.jpg" />
+        <img class="grid-item grid-item--width2" src="~/Content/images/1_budapest_hungary_panorama_2011.jpg" />
+        <img class="grid-item grid-item--width2 grid-item--height2" src="~/Content/images/11a.jpg" />
+        @*<div class="grid-item grid-item--width2 grid-item--height2"></div>
+            <div class="grid-item grid-item--width2"></div>
+            <div class="grid-item grid-item--width2"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item grid-item--width2"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>*@
+        @*@using (Html.BeginForm("Upload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <input type="file" name="upload" /><br>
+                <input type="submit" value="Загрузить" />
+            }*@
+    </div>
+    <p>@ViewBag.data;</p>
+
+    @using (Html.BeginForm("Upload", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="form-group">
+            <input type="file" name="image" /><br>
+        </div>
+                        <div class="form-group">
+                        <input type="submit" value="Загрузить" />
+                    </div>
+
+       
+    }
+
+
+                    </div>
+                </section>
+
+
+                <!-- About Me class="three"-->
+                <section id="about">
+
+                    <div class="container-fluid">
+
+                        <header>
+                            <h2>About Me</h2>
+                        </header>
+
+                        <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+
+                        <p>Заполняется владельцем</p>
+
+                    </div>
+                </section>
+
+                <!-- Contact -->
+                <section id="contact">
+                    <div class="container-fluid">
+
+                        <header>
+                            <h2>Contact</h2>
+                        </header>
+
+                        <p>Если понравилось моё творчество, напишите мне. Я буду рад услышать ваше мнение. </p>
+
+                        <form method="post" action="#">
+                            <div class="row">
+                                <div class="username"><input type="text" name="name" placeholder="Name" /></div>
+                                <div class="passcode"><input type="text" name="email" placeholder="Email" /></div>
+                                <div class="textarea">
+                                    <textarea cols="100" rows="9" name="message" placeholder="Message"></textarea>
+                                </div>
+                                <div class="">
+                                    <input type="submit" value="Отправить" />
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </section>
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<script src="~/Content/css/libs/Masonry/mas/js/masonry.pkgd.js"></script>
+<script src="~/Content/css/libs/Masonry/mas/js/masonry-docs.min.js"></script>
+<script src="~/Content/css/libs/Masonry/packery-docs/packery.pkgd.js"></script>
+<script src="~/Content/css/libs/Masonry/packery-docs/js/packery-docs.min.js"></script>
+<script src="~/Scripts/menu_dinamic_use_button.js"></script>
+
+
+<script>
+        var $grid = $('.grid').packery({
+            itemSelector: '.grid-item'
+        });
+
+        $grid.on('click', '.grid-item', function (event) {
+            // change size of item by toggling large class
+            $(event.currentTarget).toggleClass('grid-item--large');
+            // trigger layout after item size changes
+            $grid.packery('layout');
+        });
+
+</script>
